@@ -59,7 +59,7 @@ window
 # load an environment bitmap
 floorplan
 ( 
-  name "playground"
+  name "evader"
   bitmap "playground.pgm"
   size [18.0 19.6 0.5]
   pose [ 0 0 0 0.000 ]
@@ -67,5 +67,4 @@ floorplan
 
 # throw in a robot
 turtlebot( pose [ 0.0 0.0 0 90.000 ] name "robot_0" color "blue")
-turtlebot( pose [ 0.0 -1.2 0 90.000] name "robot_1" color "black")
 block( pose [ 0.0 4.0 0 180.000 ] color "black")

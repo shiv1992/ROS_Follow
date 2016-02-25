@@ -42,7 +42,7 @@ def callback(data):
 # Main File
 if __name__=="__main__":
 
-    rospy.init_node('move')
+    rospy.init_node('evade')
     	   
     rospy.loginfo("About to be moving forward!")
    

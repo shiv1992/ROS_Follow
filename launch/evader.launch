@@ -1,5 +1,5 @@
 <launch>
 	<node name="stage_1" pkg="stage_ros" type="stageros"
-	      args="$(find lab1)/world/playground.world" />
+	      args="$(find lab1)/world/evader.world" />
         <node name="evade" pkg = "lab1" type = "evader.py" />
 </launch>

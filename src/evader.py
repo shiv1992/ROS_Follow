@@ -11,7 +11,7 @@ from sensor_msgs.msg import LaserScan
 
 
 x_speed = 2.0  # 2.0 m/s
-p = rospy.Publisher('/robot_0/cmd_vel', Twist)
+p = rospy.Publisher('/cmd_vel', Twist)
 twist = Twist()
 twist.linear.x = x_speed;
 twist.linear.y = 0; twist.linear.z = 0;     # we can't use these!        
@@ -47,7 +47,7 @@ if __name__=="__main__":
     rospy.loginfo("About to be moving forward!")
    
     while(1):
-	p2 = rospy.Subscriber('/robot_0/base_scan', LaserScan, callback)
+	p2 = rospy.Subscriber('/base_scan', LaserScan, callback)
 	rospy.sleep(0.2)	
 	
     rospy.loginfo("Stopping!")
